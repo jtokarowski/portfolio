@@ -22,4 +22,11 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.Run();
+//the below code is required for heroku hosting
+if (app.Environment.IsDevelopment()) {
+    app.Run();
+}
+else {
+    var port = Environment.GetEnvironmentVariable("PORT");
+    app.Run($"http://*:{port}");
+}
