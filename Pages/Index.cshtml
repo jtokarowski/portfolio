@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+
+<h1>My Portfolio</h1>
+
+<p>
+    Welcome to my software development portfolio! Here are some of my projects:
+</p>
+
+<ul>
+    @foreach (var item in Model.PortfolioItems)
+    {
+        <li><a href="@item.Url">@item.Title</a></li>
+    }
+</ul>
