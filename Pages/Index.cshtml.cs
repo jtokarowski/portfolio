@@ -16,8 +16,8 @@ public class IndexModel : PageModel
         // Define and return a list of your portfolio items
         return new List<PortfolioItem>
         {
-            new PortfolioItem { Title = "Project 1", Url = "https://example.com/project1" },
-            new PortfolioItem { Title = "Project 2", Url = "https://example.com/project2" },
+            new PortfolioItem { Title = "Music In Context (Sort My Spotify)", Url = "http://musicincontext.herokuapp.com/" },
+            // new PortfolioItem { Title = "Project 2", Url = "https://example.com/project2" },
             // Add more portfolio items as needed
         };
     }
